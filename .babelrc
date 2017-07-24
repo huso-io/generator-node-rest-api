@@ -1,0 +1,38 @@
+{
+  "presets": [
+    ["env", {"modules": false, "targets": {"node": true }}],
+    "latest",
+    "flow"
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-decorators-legacy",
+    "transform-es3-member-expression-literals",
+    "transform-es3-property-literals",
+    "transform-exponentiation-operator",
+    "transform-flow-strip-types",
+    "transform-object-rest-spread",
+    "babel-root-slash-import",
+    "transform-async-to-generator"
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        ["env", {"modules": false, "targets": {"node": true }}],
+        "latest",
+        "flow"
+      ],
+      "plugins": [
+        "transform-class-properties",
+        "transform-decorators-legacy",
+        "transform-es3-member-expression-literals",
+        "transform-es3-property-literals",
+        "transform-exponentiation-operator",
+        "transform-flow-strip-types",
+        "transform-object-rest-spread",
+        "babel-root-slash-import",
+        "transform-async-to-generator"
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Hack",
+  "markdown.preview.fontSize": 12,
+  "files.autoSave": "onWindowChange",
+  "editor.cursorStyle": "line",
+  "editor.minimap.enabled": true,
+  "zenMode.restore": true,
+  "editor.letterSpacing": 1,
+  "editor.dragAndDrop": true,
+  "workbench.iconTheme": "vs-seti",
+  "editor.cursorStyle": "line-thin",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.har": true,
+    "**/.nyc_output": true,
+    "**/node_modules": true,
+    "**/data": true,
+    "**/dump.rdb": true
+  },
+  "editor.tabSize": 2,
+  "window.openFilesInNew": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.formatOnSave": false,
+  "search.useIgnoreFilesByDefault": true,
+  "terminal.integrated.scrollback": 500,
+  "terminal.integrated.confirmOnExit": true,
+  "editor.wordWrapColumn": 80
+}

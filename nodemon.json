@@ -1,0 +1,29 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules",
+    "data",
+    "flow-typed",
+    "test"
+  ],
+  "verbose": true,
+  "quiet": false,
+  "execMap": {
+    "js": "node"
+  },
+  "events": {
+    "restart": "yarn eslint"
+  },
+  "watch": [
+    "bin/",
+    "config/",
+    "route/",
+    "schemas/",
+    "middleware/",
+    ".env",
+    ".env.development",
+    ".env.development.local"
+  ],
+  "ext": "js"
+}
