@@ -29,7 +29,7 @@
   - [通过 NVM 管理不同版本的 Node.js](#通过-nvm-管理不同版本的-nodejs)
   - [通过 RVM 管理不同版本的 Ruby](#通过-rvm-管理不同版本的-ruby)
   - [统一使用 Atom/VSCode 编辑器](#统一使用-atomvscode-编辑器)
-  - [配置运行 `api.huso.io` 工程的环境](#配置运行-apihusoio-工程的环境)
+  - [配置运行 `generator-node-fullstack` 工程的环境](#配置运行-apihusoio-工程的环境)
   - [通过 Trello 解决协作中信息共享的问题](#通过-trello-解决协作中信息共享的问题)
   - [使用 Slack 自动化协作](#使用-slack-自动化协作)
 
@@ -64,10 +64,10 @@
 - 通过 Slack 进行沟通
   - 就算 Slack 是一个聊天服务，有的时候也可能会发生几个小时才能收到回
   复的情况
-  - 使用 `api-huso-io` 频道交流、讨论 `api.huso.io` 工程
+  - 使用 `api-huso-io` 频道交流、讨论 `generator-node-fullstack` 工程
   - 还有很多其它频道
 
-> 提示：我们在 Slack 上设置了很多公开频道，但因为 `api.huso.io` 项目
+> 提示：我们在 Slack 上设置了很多公开频道，但因为 `generator-node-fullstack` 项目
 是闭源的，所以 `api-huso-io` 频道也同样设定为私有频道，如果你是核心成员
 ，可以向相关管理员申请加入。
 
@@ -122,7 +122,7 @@
 
 ## 开发前要做的准备
 
-> 提示：`git clone https://github.com/huso-io/api.huso.io.git`，准备开发前先将项目拉取下来，接下来的一些配置会需要用到项目中的一些工具脚本。
+> 提示：`git clone https://github.com/huso-io/generator-node-fullstack.git`，准备开发前先将项目拉取下来，接下来的一些配置会需要用到项目中的一些工具脚本。
 
 ### 使用 Linux/Unix 系统
 
@@ -326,7 +326,7 @@ sh ./tool/apm.install.sh   # 如果使用的是 OS X 系统
 
 VS Code 的详细配置已经可视化在 `.vscode` 目录下，如果想要了解如何 [自定义 VS Code](https://code.visualstudio.com/docs/introvideos/configure)，参见官方 [介绍](https://code.visualstudio.com/docs/introvideos/configure)。
 
-### 配置运行 `api.huso.io` 工程的环境
+### 配置运行 `generator-node-fullstack` 工程的环境
 
 #### 安装运行时
 
@@ -369,7 +369,7 @@ sh ./tool/cargo.install.sh
 
 ## 熟悉项目
 
-> 提示：以 [README.md](https://github.com/huso-io/api.huso.io/blob/master/README.md)
+> 提示：以 [README.md](https://github.com/huso-io/generator-node-fullstack/blob/master/README.md)
  文档为入口，逐步深入，反复熟悉所有文档及工程。
 
 ### 文件夹结构
@@ -395,13 +395,13 @@ sh ./tool/cargo.install.sh
 
 ### 如何运行项目？
 
-[开发环境](#开发前要做的准备)都准备好之后，首先将 `api.huso.io` 初始化为 `Git Flow` 类型的项目，
+[开发环境](#开发前要做的准备)都准备好之后，首先将 `generator-node-fullstack` 初始化为 `Git Flow` 类型的项目，
 
 ```shell
 git flow init -d
 ```
 
-成功后 `api.huso.io` 会自动从 `master` 分支切换到 `develop` 分支。
+成功后 `generator-node-fullstack` 会自动从 `master` 分支切换到 `develop` 分支。
 
 然后，我们需要为自己的任务新建分支，假设任务名称叫作 `api-vote` 的话，运行下述指令即可为我们的任务创建专门的分支。
 
@@ -422,7 +422,7 @@ yarn pre-dev
 yarn start
 ```
 
-`yarn start` 是最常用的指令，有兴趣的话也可以了解下 [别的主要指令](https://github.com/huso-io/api.huso.io/blob/master/doc/task.md)。
+`yarn start` 是最常用的指令，有兴趣的话也可以了解下 [别的主要指令](https://github.com/huso-io/generator-node-fullstack/blob/master/doc/task.md)。
 
 ### 如何新建接口？
 
