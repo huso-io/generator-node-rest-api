@@ -1,9 +1,0 @@
-TAP version 13
-1..7
-ok 1 - /Users/iTonyYo/Development/holaever/api.huso.io/route/example.js
-ok 2 - /Users/iTonyYo/Development/holaever/api.huso.io/route/index.js
-ok 3 - /Users/iTonyYo/Development/holaever/api.huso.io/task/default.js
-ok 4 - /Users/iTonyYo/Development/holaever/api.huso.io/bin/app.js
-ok 5 - /Users/iTonyYo/Development/holaever/api.huso.io/bin/load.routes.js
-ok 6 - /Users/iTonyYo/Development/holaever/api.huso.io/config/environment/index.js
-ok 7 - /Users/iTonyYo/Development/holaever/api.huso.io/config/environment/paths.js
