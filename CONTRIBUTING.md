@@ -424,6 +424,8 @@ yarn start
 
 `yarn start` 是最常用的指令，有兴趣的话也可以了解下 [别的主要指令](https://github.com/huso-io/generator-node-fullstack/blob/master/doc/task.md)。
 
+> 依序完成上述预估耗时 5 分钟。将来会通过生成器完成这一系列操作。
+
 ### 如何新建接口？
 
 - 完整 **拷贝** `./route/example.js`；
@@ -456,7 +458,52 @@ export { METHOD, PATH, HANDLER };
 
 至此，一个新的接口已经被创建。
 
-> 依序完成上述预估耗时 5 分钟。将来会通过生成器完成这一系列操作。
+> 依序完成上述预估耗时 10 分钟。将来会通过生成器完成这一系列操作。
+
+### 如何新建开放接口测试用例？
+
+- 完整 **拷贝** `./test/example-test.js`；
+- **重命名** 刚才拷贝后的文件为 `./test/vote-test.js`；
+
+> 提示：Mocha 启动脚本会自动将 `*-test.js` 后缀的测试文件加载进来。
+
+```javascript
+setTimeout(function() {
+
+  // 将这里的 `/example` 更改为你要测试的路由
+  describe('/example', () => {
+    it('example rest api', (done) => {
+      request(protocol + '://localhost:9323')
+
+        // 将这里的 `/example` 更改为你要测试的路由
+        .post('/example')
+        .type('form')
+        .send({
+          'example': 'Example-X.X.X'
+        })
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end((err, res) => {
+          if (err) throw err;
+
+          // 将这里更改为你需要的验证逻辑
+          assert.equal(
+            res.body.msg,
+            'Example: hello world'
+          );
+          done();
+        });
+    });
+  });
+
+  run();
+}, 1500);
+```
+
+至此，一个新的接口已经被创建。
+
+> 依序完成上述预估耗时 10 分钟。将来会通过生成器完成这一系列操作。
 
 
 
