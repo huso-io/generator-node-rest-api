@@ -2,9 +2,6 @@
 
 import request from 'supertest';
 import { assert } from 'chai';
-import app from '../bin/app';
-
-app();
 
 let protocol = 'http';
 
