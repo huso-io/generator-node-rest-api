@@ -14,7 +14,7 @@ import mongoose from '../middleware/koa-mongoose';
 import redis from '../middleware/koa-redis';
 import loadRoutes from './load.routes';
 import Router from 'koa-router';
-import bodyParser from 'koa-bodyparser';
+import bodyParser from '../middleware/koa-body-parser';
 
 //TODO: 令牌
 exports = module.exports = function() {
@@ -35,10 +35,12 @@ exports = module.exports = function() {
     .use(mongoose(config.mongo))
     .use(redis())
     .use(helmet())
-    .use(bodyParser())
     .use(compress())
     .use(cors())
-    .use(error());
+    .use(error())
+    .use(bodyParser({
+      enableTypes: ['form']
+    }));
 
   loadRoutes(router, (err) => {
     if (!err) {
