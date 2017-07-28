@@ -58,6 +58,7 @@ module.exports = {
   browserSyncPort: process.env.BROWSER_SYNC_PORT || 6888,
   port: normalizePort(process.env.PORT || 9000),
   ip: process.env.IP || '0.0.0.0',
+  shortUrlHost: process.env.SHORT_URL_HOST,
   rds: {
     client: {
       port: process.env.REDIS_PORT || 9697,
@@ -65,6 +66,9 @@ module.exports = {
       password: process.env.REDIS_PASS || 'cnHUSO!#$246'
     },
     dbs: {
+
+      // 开发环境下默认 360s 后清除
+      expire: process.env.EXPIRE || 360,
       db: {
         'target': 'db-targets',
         'shorturl': 'db-shorturls',
@@ -72,7 +76,8 @@ module.exports = {
         'targetInfo': 'db-target-info',
         'clientTriggerDate': 'db-client-trigger-date',
         'visitTimes': 'db-visit-times',
-        'userCustom': 'db-user-custom'
+        'userCustom': 'db-user-custom',
+        'items': 'db-items'
       },
       lst: {
         'stid': 'lst-shortids',

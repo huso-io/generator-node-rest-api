@@ -9,7 +9,7 @@
        2 .gitattributes
        9 .github/ISSUE_TEMPLATE.md
        7 .github/PULL_REQUEST_TEMPLATE.md
-     289 .gitignore
+     290 .gitignore
        7 .jscsrc
        2 .mailmap
        6 .npmrc
@@ -17,11 +17,11 @@
       38 .vscode/formatter.json
       34 .vscode/settings.json
        1 AUTHORS
-     603 CONTRIBUTING.md
-      17 README.md
-      75 bin/app.js
+     651 CONTRIBUTING.md
+      15 README.md
+      79 bin/app.js
      120 bin/load.routes.js
-      90 config/environment/index.js
+      95 config/environment/index.js
       14 config/environment/paths.js
      140 doc/node-rest-api-framework-compare.md
       52 doc/task.md
@@ -29,8 +29,10 @@
        5 flow-typed/koa-compress.js
        5 flow-typed/koa-logger.js
        5 flow-typed/koa-route.js
+     759 flow-typed/npm/async_vx.x.x.js
      102 flow-typed/npm/http2_vx.x.x.js
       33 flow-typed/npm/kcors_vx.x.x.js
+      33 flow-typed/npm/koa-bodyparser_vx.x.x.js
       53 flow-typed/npm/koa-helmet_vx.x.x.js
       45 flow-typed/npm/koa-json-error_vx.x.x.js
       73 flow-typed/npm/koa-jsonp_vx.x.x.js
@@ -39,15 +41,16 @@
       39 flow-typed/npm/koa-router_vx.x.x.js
      319 flow-typed/npm/koa_v2.x.x.js
      514 flow-typed/npm/lodash_v4.x.x.js
+      16 flow-typed/npm/shortid_v2.2.x.js
       23 gulpfile.babel.js
        0 lines.each.txt
        0 lines.txt
+     123 middleware/koa-body-parser.js
      108 middleware/koa-mongoose.js
-      37 middleware/koa-redis.js
+      41 middleware/koa-redis.js
       29 nodemon.json
-     103 package.json
+     109 package.json
     1052 redis.conf
-       9 report/.eslint-result
       33 route/example.js
       27 route/index.js
        9 schema/example.js
@@ -56,8 +59,9 @@
       15 server-key.pem
        7 server.js
       19 task/default.js
+      29 test/example-test.js
+       5 test/server.js
        4 test/setup.js
-      32 test/test.js
       54 tool/apm.install.sh
       54 tool/apm.uninstall.sh
       10 tool/authors.sh
@@ -71,5 +75,5 @@
        2 tool/public.address.on.server.sh
       37 tool/yarn.global.install.sh
       37 tool/yarn.global.uninstall.sh
-    5612 yarn.lock
-   10360 total
+    5739 yarn.lock
+   11477 total

@@ -19,7 +19,7 @@
     "bin/",
     "config/",
     "route/",
-    "schemas/",
+    "schema/",
     "middleware/",
     ".env",
     ".env.development",

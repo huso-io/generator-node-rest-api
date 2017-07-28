@@ -4,6 +4,10 @@ import config from '../config/environment';
 import rds from 'redis';
 import noop from 'lodash/noop';
 import chalk from 'chalk';
+import bluebird from 'bluebird';
+
+bluebird.promisifyAll(rds.RedisClient.prototype);
+bluebird.promisifyAll(rds.Multi.prototype);
 
 let _chalk = new chalk.constructor({enabled: true});
 
